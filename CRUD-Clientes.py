@@ -18,8 +18,7 @@ def cadastra_cliente() :
     cliente_telefone = input('Digite o telefone do cliente: ')
     clientes_dados = (cliente_nome,cliente_cep,cliente_telefone)
     clientes.append(clientes_dados)
-    print(clientes)
-    print('Cliente adicionado')
+    print('Cliente adicionado com sucesso!!')
 
 def mostrar_cliente() :
     for cliente in clientes:
