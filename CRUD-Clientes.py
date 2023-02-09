@@ -1,6 +1,6 @@
 clientes = []
 n_clientes = 1
-
+#Menu Int -> menu de inicialização do progama: função + return
 def menu():
     option = int(input('''
 [1] - Cadastrar cliente
@@ -11,22 +11,24 @@ def menu():
 '''))
     
     return option
-
+# Função de cadastramento (Create)
 def cadastra_cliente() :
     cliente_nome = input('Digite o nome do cliente: ')
     cliente_cep = input('Digite o cep do cliente: ')
     cliente_telefone = input('Digite o telefone do cliente: ')
     clientes_dados = (cliente_nome,cliente_cep,cliente_telefone)
     clientes.append(clientes_dados)
-    print('Cliente adicionado com sucesso!!')
-
+    print('Cliente adicionado!')
+# Função de Mostrar (Read)
 def mostrar_cliente() :
+    if not clientes:
+        print("Não temos nenhum cliente cadastrado :( ")
     for cliente in clientes:
       print(f'''
       Nome: {cliente[0]}
       Cep: {cliente[1]}
       Telefone: {cliente[2]}''')
-
+# Função de Editar (UPDATE)
 def editar_cliente() :
     nome = input("Digite o nome do cliente que deseja editar: ")
     for i, cliente in enumerate(clientes):
@@ -39,7 +41,7 @@ def editar_cliente() :
             break
     else:
         print("Cliente não encontrado.")
-
+# Função de Excluir (Delete)
 def excluir_cliente() :
     nome = input("Digite qual cliente você quer excluir: ")
     for i, cliente in enumerate(clientes):
@@ -50,7 +52,7 @@ def excluir_cliente() :
     else:
         print("Cliente não encontrado.")                               
 
-
+# Laços do Progama/Menu
 def programa() :
 
     while True:
