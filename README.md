@@ -4,7 +4,22 @@
     #FUNÇÃO LISTAR
     #FUNÇÃO EXCLUIR
 
-    CREATE,READ,UPDATE,DELETE.
+    
+   CREATE,READ,UPDATE,DELETE.
+   
+   #Este é um programa em Python que permite gerenciar uma lista de clientes. O programa inclui as seguintes funções:
+
+#1 - cadastrar cliente: permite que o usuário adicione um novo cliente à lista, fornecendo o nome, o CEP e o número de telefone do cliente.
+
+#2 - consultar clientes: permite que o usuário visualize a lista de todos os clientes cadastrados.
+
+#3 - editar cliente: permite que o usuário edite as informações de um cliente específico.
+
+#4 - excluir cliente: permite que o usuário exclua um cliente da lista.
+
+#5 - sair do programa: permite que o usuário saia do programa.
+
+#O programa funciona como um menu interativo, apresentando as opções para o usuário e aguardando uma escolha. A partir daí, o programa chama a função apropriada para realizar a tarefa desejada.
 
     #AQUI ESTÁ UM RASCUNHO DO ARQUIVO SEM O MENU.
 
